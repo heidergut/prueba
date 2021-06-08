@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: monospace;
+}
+
+[id]{
+  scroll-margin-top: 60px;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 15px 0 rgba($color: #000000, $alpha: 0.7);
+  z-index: 1;
+
+  >.logo {
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+
+    >strong {
+      width: 100%;
+      height: 100%;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+
+  >.nav-bar {
+    width: 80%;
+    height: 100%;
+
+    >ul {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      >li {
+        height: 100%;
+        display: flex;
+        font-size: 18px;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;        
+        transition: all .3s;
+        cursor: pointer;
+
+        > a{
+          text-decoration: none;
+          color: #000;
+          width: 100%;
+          height: 100%;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &:hover {
+          background-color: cadetblue;
+        }
+      }
+    }
+  }
+}
+
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(1, 8, 17);
+  background: linear-gradient(101deg, rgba(1, 8, 17, 1) 0%, rgba(0, 128, 171, 1) 100%);
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+
+  >.banner-text,
+  >.banner-imagen {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img{
+      filter: drop-shadow(0 2px 15px rgba(0, 0, 0, 0.5));
+    }
+  }
+
+  > .banner-text{
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+    > h1{
+      font-size: 50px;
+      font-weight: 600;
+      line-height: normal;
+    }
+    > p{
+      font-size: 18px;
+      line-height: normal;
+      margin: 20px 0;
+    }
+    > button{
+      margin-top: 20px;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 18px;
+    }
+  }
+}
+
+.nosotros-container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;  
+  > h2{
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  > p{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+  }
+}

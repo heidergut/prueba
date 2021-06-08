@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: monospace; }
+
+[id] {
+  scroll-margin-top: 60px; }
+
+.header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.7);
+  z-index: 1; }
+  .header > .logo {
+    width: 20%;
+    height: 100%;
+    cursor: pointer; }
+    .header > .logo > strong {
+      width: 100%;
+      height: 100%;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: 600; }
+  .header > .nav-bar {
+    width: 80%;
+    height: 100%; }
+    .header > .nav-bar > ul {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .header > .nav-bar > ul > li {
+        height: 100%;
+        display: flex;
+        font-size: 18px;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+        cursor: pointer; }
+        .header > .nav-bar > ul > li > a {
+          text-decoration: none;
+          color: #000;
+          width: 100%;
+          height: 100%;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .header > .nav-bar > ul > li:hover {
+          background-color: cadetblue; }
+
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #010811;
+  background: linear-gradient(101deg, #010811 0%, #0080ab 100%);
+  display: flex;
+  align-items: center;
+  padding-top: 60px; }
+  .banner-container > .banner-text,
+  .banner-container > .banner-imagen {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .banner-container > .banner-text > img,
+    .banner-container > .banner-imagen > img {
+      filter: drop-shadow(0 2px 15px rgba(0, 0, 0, 0.5)); }
+  .banner-container > .banner-text {
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%; }
+    .banner-container > .banner-text > h1 {
+      font-size: 50px;
+      font-weight: 600;
+      line-height: normal; }
+    .banner-container > .banner-text > p {
+      font-size: 18px;
+      line-height: normal;
+      margin: 20px 0; }
+    .banner-container > .banner-text > button {
+      margin-top: 20px;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 18px; }
+
+.nosotros-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%; }
+  .nosotros-container > h2 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 20px; }
+  .nosotros-container > p {
+    font-size: 18px;
+    color: #333;
+    text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
